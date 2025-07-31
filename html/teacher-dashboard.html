@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Welcome, Teacher</h2>
+
+    <label for="semester">Select Semester:</label>
+    <select id="semester">
+      <option value="">--Select Semester--</option>
+      <option value="sem1">Semester 1</option>
+      <option value="sem2">Semester 2</option>
+      <option value="sem3">Semester 3</option>
+    </select>
+
+    <div id="subjects-section" style="display:none;">
+      <h3>Subjects:</h3>
+      <ul id="subject-list"></ul>
+    </div>
+
+    <label for="attendance-date">Select Date:</label>
+    <input type="date" id="attendance-date">
+
+    <button id="take-attendance">Take Attendance</button>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

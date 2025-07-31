@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Take Attendance</title>
+  <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+  <div class="attendance-container">
+    <h2>Take Attendance</h2>
+
+    <div class="info-box">
+      <p><strong>Semester:</strong> <span id="semDisplay"></span></p>
+      <p><strong>Subject:</strong> <span id="subjectDisplay"></span></p>
+      <p><strong>Date:</strong> <span id="dateDisplay"></span></p>
+    </div>
+
+    <form id="attendanceForm">
+      <table>
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+          <!-- Rows will be inserted here -->
+        </tbody>
+      </table>
+      <button type="submit">Submit Attendance</button>
+    </form>
+  </div>
+
+  <script src="attendance.js"></script>
+</body>
+</html>
